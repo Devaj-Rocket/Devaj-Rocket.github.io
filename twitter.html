@@ -1,1 +1,230 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twitter - Social Media Insights</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #111217;
+            color: #E4E4E4;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            background-color: #1F2833;
+            padding: 10px 0;
+            z-index: 1000;
+        }
+
+        nav .brand-name {
+            font-size: 2em;
+            color: #66FCF1;
+            text-align: center;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #1F2833;
+            padding: 10px 40px;
+        }
+
+        .nav-right a {
+            color: #C5C6C7;
+            text-decoration: none;
+            padding: 10px 15px;
+            font-size: 1.1em;
+        }
+
+        
+        .hero-section {
+            padding: 120px 20px;
+            background: linear-gradient(to bottom, #0B0C10, #1F2833);
+            color: #E4E4E4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .hero-content {
+            max-width: 2000px;
+            width: 100%;
+            padding: 30px;
+            max-height: 80vh;
+            overflow-y: auto;
+        }
+
+        .hero-right h1 {
+            font-size: 3em;
+            color: #66FCF1;
+            margin-bottom: 20px;
+        }
+
+        .hero-right p {
+            font-size: 1.2em;
+            margin-bottom: 40px;
+        }
+
+        .question-box {
+            background-color: #1F2833;
+            border-radius: 8px;
+            margin: 15px 0;
+            padding: 20px;
+            color: #C5C6C7;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 1.2em;
+            transition: background-color 0.3s ease;
+        }
+
+        .question-box:hover {
+            background-color: #66FCF1;
+            color: #111217;
+        }
+
+        .answer {
+            display: none;
+            background-color: #2D3436;
+            padding: 15px;
+            margin-top: 10px;
+            border-radius: 5px;
+            font-size: 1em;
+            color: #E4E4E4;
+        }
+
+        .answer.active {
+            display: block;
+        }
+
+        
+        .hero-content {
+            max-height: 80vh;
+            overflow-y: auto;
+        }
+
+        footer {
+            background-color: #1F2833;
+            text-align: center;
+            padding: 20px;
+            color: #C5C6C7;
+        }
+
+        footer p {
+            font-size: 1em;
+        }
+        .about_twitter{
+            font-size: 15px;
+            width: 1000px;
+            height:300px;
+            border:10px solid; /* Border thickness */
+            border-image: linear-gradient(to left,#111217 ,#66FCF1 ) 1;
+            padding: 20px;
+            text-align: center;
+            font-family: sans-serif;
+            margin:10px;
+            color: #fafafa;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="nav-left">
+                <span class="brand-name">MediaMetrics</span>
+            </div>
+            <div class="nav-right">
+                <a href="index.html">Home</a>
+                <a href="instagram.html">Instagram</a>
+                <a href="tiktok.html">TikTok</a>
+                <a href="twitter.html">Twitter</a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="hero-section">
+        <div class="hero-content">
+            <div class="hero-right">
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <h1>Explore Twitter Insights</h1>
+                <div class="about_twitter">
+                    <h2>Twitter, now known as X, is a social media platform launched in 2006 where users share short messages called tweets. Each tweet can be up to 280 characters long and can include text, images, videos, and links. The platform is known for its fast-paced, real-time updates and is often used for breaking news, trending topics, and public conversations. Users can engage by liking, replying to, or retweeting others' posts. It also features Spaces for live audio conversations and has a verification system, represented by the blue checkmark. Popular among individuals, journalists, businesses, celebrities, and governments, Twitter serves as a space for news, entertainment, activism, and community engagement.</h2>
+                </div>
+                <p>Click on the questions below to reveal data and insights about Twitter usage.</p>
+
+                
+                <div class="question-box" onclick="toggleAnswer('answer1')">
+                    <span>Which age groups use Twitter the most?</span>
+                </div>
+                <div class="answer" id="answer1">
+                    Twitter is most popular among young adults. The majority of users are aged between 18 and 34 years old, with 42% of internet users in this age group using Twitter regularly.
+                </div>
+
+                
+                <div class="question-box" onclick="toggleAnswer('answer2')">
+                    <span>How many hours do people spend on Twitter?</span>
+                </div>
+                <div class="answer" id="answer2">
+                    On average, users spend about 30 minutes to 1 hour per day on Twitter. However, for news junkies and influencers, this time can be higher.
+                </div>
+
+                
+                <div class="question-box" onclick="toggleAnswer('answer3')">
+                    <span>What is the impact of Twitter on different age groups?</span>
+                </div>
+                <div class="answer" id="answer3">
+                    Twitter has a significant impact on current events, politics, and global trends. It is used widely by both younger users who follow trends and older users who seek news and information.
+                </div>
+
+                
+                <div class="question-box" onclick="toggleAnswer('answer4')">
+                    <span>What is the most used feature on Twitter?</span>
+                </div>
+                <div class="answer" id="answer4">
+                    The most used feature on Twitter is the tweet itself, with many users engaging in microblogging, trending topics, and direct communication with others through hashtags and replies.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 MediaMetrics. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function toggleAnswer(answerId) {
+            var answer = document.getElementById(answerId);
+            answer.classList.toggle('active');
+        }
+    </script>
+
+</body>
+</html>
